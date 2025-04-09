@@ -42,7 +42,7 @@ class XmlToJsonAdapter implements JsonDataProvider {
 }
 
 // 4. Client code
-public class AdapterPatternExample {
+public class AdapterPattern {
     public static void main(String[] args) {
         // Existing XML provider
         XmlDataProvider xmlProvider = new XmlDataProvider();

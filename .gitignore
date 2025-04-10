@@ -1,34 +1,81 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ================================
+# Java
+# ================================
+*.class
+*.log
+*.jar
+*.war
+*.ear
 
-### STS ###
+# ================================
+# Package distributions
+# ================================
+*.zip
+*.tar.gz
+*.rar
+
+# ================================
+# Compiled class file directories
+# ================================
+target/
+build/
+out/
+
+# ================================
+# Maven
+# ================================
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# ================================
+# Gradle
+# ================================
+.gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+gradlew
+gradlew.bat
+
+# ================================
+# Eclipse / STS (Spring Tool Suite)
+# ================================
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-.out
+# ================================
+# IntelliJ IDEA
+# ================================
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# Avoid ignoring "out/" if used explicitly
+!src/**/out/
+
+# ================================
+# NetBeans
+# ================================
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# ================================
+# VS Code
+# ================================
 .vscode/
+
+# ================================
+# Mac OS & System Files
+# ================================
+.DS_Store
+Thumbs.db
